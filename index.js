@@ -20,7 +20,9 @@ app.use(cors({
   'https://my-product-curd-frontend.vercel.app/'
 
 ] ,
-  credentials: true
+credentials: true,
+methods: "GET,POST,PUT,DELETE",
+allowedHeaders: "Content-Type, Authorization"
 }));
 
 
