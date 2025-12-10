@@ -16,13 +16,8 @@ const app = express();
 app.use(express.json()); 
 app.use(cookieParser());
 app.use(cors({
-  origin:[
-  'https://my-product-curd-frontend.vercel.app/'
-
-] ,
-credentials: true,
-methods: "GET,POST,PUT,DELETE",
-allowedHeaders: "Content-Type, Authorization"
+  origin: 'https://my-product-curd-frontend.vercel.app/', // <-- replace with your Vercel URL
+  credentials: true
 }));
 
 
