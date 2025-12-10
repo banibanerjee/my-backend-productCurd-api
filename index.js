@@ -2,9 +2,9 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
-import userRoutes from "../server/routes/userRoutes.js"; 
-import productRoutes from "../server/routes/productRoutes.js";
-import paymentRoutes from "../server/routes/paymentRoutes.js"
+import userRoutes from "./routes/userRoutes.js"; 
+import productRoutes from "./routes/productRoutes.js";
+import paymentRoutes from "./routes/paymentRoutes.js"
 import Razorpay from "razorpay";
 import cookieParser from "cookie-parser";
 import bodyParser from 'body-parser';
