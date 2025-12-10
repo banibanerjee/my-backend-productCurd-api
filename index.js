@@ -16,7 +16,7 @@ const app = express();
 app.use(express.json()); 
 app.use(cookieParser());
 app.use(cors({
-  origin: 'https://my-product-curd-frontend.vercel.app/', // <-- replace with your Vercel URL
+  origin: ['https://my-product-curd-frontend.vercel.app', 'http://localhost:3000'],
   credentials: true
 }));
 
